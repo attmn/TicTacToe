@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto";
+}
+
+#boardDiv {
+  display: grid;
+  justify-content: center;
+  height: 600px;
+}
+
+#newGameBtn {
+  display: none;
+}
+
+#gameBoard {
+  width: 500px;
+  height: 500px;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.player1 {
+  background-color: rgb(244, 255, 254);
+  pointer-events: none;
+}
+
+.player2 {
+  background-color: rgb(255, 238, 238);
+  pointer-events: none;
+}
+
+td {
+  height: 33%;
+  width: 33%;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 0;
+  font-size: 60px;
+  font-family: "Lato";
+  font-weight: 300;
+  border: 5px solid rgb(235, 235, 235);
+}
+
+
+#resultsBg {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 50px;
+  justify-content: center;
+}
+
+#resultsBg::after {
+  content: "";
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: #28292c;
+}
+
+#resultsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+#resultsBox {
+  font-family: "Lato";
+  margin: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: #4b4b4b 2px 2px 10px;
+}
+
+#resultsSign {
+  font-size: 100px;
+  margin: 0;
+  color: white;
+  line-height: 90%;
+}
+
+#resultsText {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+#playAgainBtn {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  background: #3dae8e;
+  box-shadow: 0 6px #1d5243;
+  color: white;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 0;
+  border: none;
+  border-radius: 7px;
+}
+
+#playAgainBtn:hover {
+  top: 2px;
+  box-shadow: 0 4px #1d5243;
+}
+
+#playAgainBtn:active {
+  top: 4px;
+  box-shadow: 0 2px #1d5243;
+}
